@@ -28,7 +28,7 @@ class Maze {
       [0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0],
       [0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0],
       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
-    ]
+    ];
 
     this.init();
   }
@@ -43,18 +43,18 @@ class Maze {
   }
 
   render() {
-    const { context, cells, options } = this;
+    const { context, cells, options: { tileSize } } = this;
 
     const rows = cells.length;
 
-    for(let i = 0; i < rows; i += 1) {
+    for (let i = 0; i < rows; i += 1) {
       const cols = cells[i].length;
 
-      for(let j = 0; j < cols; j += 1) {
+      for (let j = 0; j < cols; j += 1) {
         const cell = cells[i][j];
 
         context.fillStyle = cell ? '#fff' : '#000';
-        context.fillRect(j * options.tileSize, i * options.tileSize, options.tileSize, options.tileSize);
+        context.fillRect(j * tileSize, i * tileSize, tileSize, tileSize);
       }
     }
   }
