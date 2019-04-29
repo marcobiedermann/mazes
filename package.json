@@ -1,0 +1,25 @@
+{
+  "name": "mazes",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/c8e45d1d-b494-4263-90e3-c70d3f88ba52/deploy-status)](https://app.netlify.com/sites/mazes/deploys)",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcobiedermann/mazes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcobiedermann/mazes/issues"
+  },
+  "homepage": "https://github.com/marcobiedermann/mazes#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  }
+}
