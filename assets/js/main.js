@@ -1,1 +1,3 @@
-console.log('Hello, world');
+import Maze from './maze.js';
+
+const maze = new Maze(document.querySelector('.js-maze'));
