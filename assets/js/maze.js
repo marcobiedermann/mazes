@@ -43,7 +43,11 @@ class Maze {
   }
 
   render() {
-    const { context, cells, options: { tileSize } } = this;
+    const {
+      context,
+      cells,
+      options: { tileSize },
+    } = this;
 
     const rows = cells.length;
 
