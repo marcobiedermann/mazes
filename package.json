@@ -4,7 +4,12 @@
   "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/c8e45d1d-b494-4263-90e3-c70d3f88ba52/deploy-status)](https://app.netlify.com/sites/mazes/deploys)",
   "main": "index.js",
   "scripts": {
-    "test": "eslint '**/*.js'"
+    "fix:js": "npm run lint:js -- --fix",
+    "fix": "npm run fix:js",
+    "format": "prettier --write '**/*.{css,html,js,jsx,json,md,yml,yaml}'",
+    "lint:js": "eslint '**/*.{js,jsx}'",
+    "lint": "npm run lint:js",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -20,6 +25,11 @@
   "devDependencies": {
     "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-plugin-import": "^2.18.0"
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
   }
 }
