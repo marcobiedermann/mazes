@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/marcobiedermann/mazes#readme",
   "devDependencies": {
-    "eslint": "^7.1.0",
+    "eslint": "^7.3.1",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
